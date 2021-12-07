@@ -297,3 +297,75 @@
 
 // console.log(grades(mystudents));
 
+
+//         THIS KEYWORD
+
+// function create(name,age){
+//     var student={
+//         name:name,
+//         age:age
+//     }
+//     return student
+// }
+
+// var student1=create("niyamath",23)
+// console.log(student1);
+
+// function birthday(student){
+//     student1.age++
+// }
+// birthday(student1)
+// console.log(student1.age);
+
+
+// function createstudent(name,age){
+//     var student={
+//         name:name,
+//         age:age,
+//         birthday:function(){
+//             this.age++
+//         }
+//     }
+//     return student
+// }
+
+// var student7=createstudent("niyamathullah khader",23)
+// student7.birthday()
+// console.log(student7);
+
+
+// function newthis(name,age){
+//     this.name=name,
+//     this.age=age,
+//     this.birthday=function(){
+//         this.age++
+//     }
+// }
+
+// var student3=new newthis("niyamath",23)
+// student3.birthday()
+// console.log(student3);
+
+
+
+function myBio(name,date,month,year){
+    this.name=name,
+    this.date=date,
+    this.month=month,
+    this.year=year,
+    this.date=function(){
+        this.date++
+    }
+    this.month=function(){
+        this.month++;
+    }
+    this.year=function(){
+
+        this.year++
+    }
+}
+var niyamath=new myBio("niyamath",11,10,1997)
+niyamath.date()
+niyamath.month()
+niyamath.year()
+console.log(niyamath);
