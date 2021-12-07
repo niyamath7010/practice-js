@@ -239,3 +239,61 @@
 //         return "id not found"
 //     }
 // }
+
+
+// let arr=[[1,2,3,4],[5,6],[8]]
+
+// function niyamath(arr){
+//     let sums=[]
+//     let sum=0
+//     for(i=0;i<arr.length;i++){
+//         for(j=0;j<arr[i].length;j++){
+//             sum=sum+arr[i][j]
+//         }
+//         sums[i]=sum
+//         sum=0
+//     }
+//     return sums
+// }
+
+// console.log(niyamath(arr));
+
+
+// for in property
+
+// var student={
+//     name:"marry",
+//     age:18
+// }
+
+// for(property in student){
+//     console.log(property)
+// }
+
+// var mystudents=[
+//     {
+//         name:"farhan",
+//         grades:[90,50,80]
+//     },{
+//         name:"ahamed",
+//         grades:[100,100,70]
+//     }
+// ]
+
+// function grades(mystudents){
+//     let aver=[]
+//     let sum=0
+//     let score=0
+//     for(i=0;i<mystudents.length;i++){
+//         score=mystudents[i].grades
+//         for(j=0;j<score.length;j++){
+//             sum=sum+score[j]
+//         }
+//         aver[i]=Math.floor( sum/score.length)
+//         sum=0
+//     }
+//     return aver
+// }
+
+// console.log(grades(mystudents));
+
